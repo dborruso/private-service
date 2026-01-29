@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 supabase: Client = create_client(
     os.environ.get("SUPABASE_URL"),
-    os.environ.get("SUPABASE_PUBLISHABLE_KEY")
+    os.environ.get("SUPABASE_KEY")
 )
 
 @app.route('/api/test')
